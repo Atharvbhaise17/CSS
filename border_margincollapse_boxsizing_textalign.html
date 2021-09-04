@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container {
+        background-color: red;
+        height: 1000px;
+        width: 500px;
+        margin-bottom: 100px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: slategray;
+        border-radius: 4px;
+        /* to give some curve */
+        box-sizing: border-box;
+    }
+
+    .head {
+        background-color: black;
+        color: white;
+        height: 1000px;
+        width: 500px;
+        margin-top: 100px;
+        /* margin collapse */
+        /* it will not allocate the 100 px more margin it will share the margin of the above 100px */
+        border: 10px solid red;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+
+    .athu {
+        width: 100%;
+        box-sizing: content-box;
+        /* it eill overflow towards outside */
+        border: 20px solid black;
+        box-sizing: border-box;
+        /* it contain padding + height +width + border */
+
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse aperiam perspiciatis voluptatibus?
+        Sequi repellat amet ab quaerat nulla, est consequuntur fugiat natus, autem quod dolore eius rerum a omnis enim
+        pariatur! Ex, obcaecati.
+        <div class="athu">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur accusamus architecto
+            ducimus voluptate, omnis laboriosam. Ad harum incidunt quos.
+        </div>
+
+    </div>
+    <div class="head">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit veniam voluptate voluptatum tempore soluta
+        ex. Ratione doloremque corporis eos aspernatur dolorum magnam rem fugiat molestiae quod dignissimos ipsa, sequi
+        atque natus, ipsum facere.
+    </div>
+</body>
+
+</html>
