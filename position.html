@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>position</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+nav{
+background-color: black;
+color: blanchedalmond;
+height: 5vh;
+position: sticky;  /* it will stick at one position whenever we will scroll */
+top: 0;
+z-index: 1;       /* who has greater z index it will show first */
+}
+
+nav ul li {
+    display: inline-block;
+    padding:  0px 13px;
+    padding-top: 10px;
+    
+}
+
+.container{
+    background-color: crimson;
+    height: 150vh;
+    color: blue;
+    
+
+}
+
+.container p{
+    background-color: purple;
+    height: 123px;
+
+}
+.class{
+    background-color: yellow;
+    height: 50px;
+    width: 50vw;
+    position: relative;  /* we can do left right top bottom and it will do his changes according to who is above */
+    /* position: absolute;         it will do his changes respected to parent who has non static position */
+    top: 123px;
+    margin: auto;
+
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+       <p>
+
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis inventore dicta ratione sit, eaque repellendus aut? Unde, facere placeat labore asperiores doloremque voluptate consectetur ipsum consequatur vitae ullam necessitatibus quis.
+        </p>
+        <div class="class">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, nostrum. Consequuntur ad earum voluptatibus saepe accusamus accusantium nesciunt delectus aspernatur possimus culpa maxime facere, in et fuga veniam a. Nesciunt.
+        </div>
+    </div>
+</body>
+</html>
